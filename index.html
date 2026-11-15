@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sho'r Radar – Irrigation and soil-salt advice for Uzbek farmers</title>
+<meta name="description" content="Sho'r Radar turns NASA Earth data into a daily irrigate / monitor / wait signal, a salt-risk indicator and salt-aware crop ideas for farmers in Uzbekistan. Telegram bot in Uzbek, Russian and English.">
+<meta property="og:title" content="Sho'r Radar">
+<meta property="og:description" content="NASA data → a clear daily decision for farmers in Uzbekistan.">
+<meta property="og:image" content="assets/logo-h-light.jpg">
+<link rel="icon" href="assets/app-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><img src="assets/mark-light.png" alt="" width="32" height="32"><span>Sho'r <b>Radar</b></span></a>
+    <nav aria-label="Main">
+      <a href="#how" data-i18n="nav_how">How it works</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#data" data-i18n="nav_data">Data</a>
+      <a href="#honesty" data-i18n="nav_honesty">Honesty</a>
+      <a href="#roadmap" data-i18n="nav_next">Next</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en" class="on">EN</button><button data-lang="uz">UZ</button><button data-lang="ru">RU</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="eyebrow" data-i18n="eyebrow">NASA Space Apps 2026 · Team CST</p>
+      <h1 data-i18n="h1">Should I irrigate today?<br><span>Now a phone can answer.</span></h1>
+      <p class="lead" data-i18n="lead">Sho'r Radar turns NASA Earth data into one clear daily signal for farmers in Uzbekistan: irrigate, monitor or wait. It also flags salt risk and suggests salt-aware crops. It lives inside Telegram, in Uzbek, Russian and English.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://t.me/ShorRadarBot" target="_blank" rel="noopener" data-i18n="cta_bot">Open the Telegram bot</a>
+        <a class="btn ghost" href="#how" data-i18n="cta_how">See how it works</a>
+      </div>
+      <p class="note" data-i18n="hero_note">Decision support, not a measurement. Salt is not observed directly; we score conditions that favour build-up.</p>
+    </div>
+
+    <div class="phone" aria-label="Example of the app screen">
+      <div class="phone-top"><img src="assets/mark-light.png" alt="" width="22" height="22"><b>Sho'r Radar</b><span class="pill">Nukus</span></div>
+      <div class="verdict v-irr">
+        <small data-i18n="ph_today">Today</small>
+        <strong data-i18n="ph_irrigate">IRRIGATE</strong>
+        <p data-i18n="ph_why">Root-zone soil is dry and no rain is expected in the next 3 days.</p>
+      </div>
+      <div class="facts">
+        <div><small data-i18n="ph_wet">Soil wetness</small><b>41%</b></div>
+        <div><small data-i18n="ph_rain">Rain, 7 days</small><b>0 mm</b></div>
+        <div><small data-i18n="ph_salt">Salt risk</small><b class="amber" data-i18n="ph_med">Medium</b></div>
+      </div>
+      <div class="meter"><i style="left:52%"></i></div>
+      <p class="tiny" data-i18n="ph_demo">Illustrative screen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="band">
+  <div class="wrap">
+    <h2 data-i18n="prob_h">Salt and scarce water cost farmers their harvest</h2>
+    <div class="stats">
+      <div class="stat"><b>47%</b><span data-i18n="st1">of Uzbekistan's irrigated land is salt-affected</span></div>
+      <div class="stat"><b>79%</b><span data-i18n="st2">of irrigated land in Karakalpakstan is affected by salinization</span></div>
+      <div class="stat"><b>82%</b><span data-i18n="st3">in Syrdarya, one of our pilot areas</span></div>
+    </div>
+    <p class="small" data-i18n="st_src">Published regional statistics (Frontiers in Sustainable Food Systems, 2025). They describe regions, not any individual field. Most smallholders have no soil sensors and no easy access to an agronomist.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="wrap sec">
+  <h2 data-i18n="how_h">How it works</h2>
+  <ol class="steps">
+    <li><span>1</span><h3 data-i18n="s1h">Pick your area</h3><p data-i18n="s1p">Choose a covered district or share your location. Add a field with its crop, growth stage, groundwater and drainage.</p></li>
+    <li><span>2</span><h3 data-i18n="s2h">We read NASA data</h3><p data-i18n="s2p">Root-zone soil wetness, temperature, rainfall and sunlight from NASA POWER, plus a 7-day forecast from Open-Meteo.</p></li>
+    <li><span>3</span><h3 data-i18n="s3h">Rules decide</h3><p data-i18n="s3p">Evapotranspiration and a water balance are checked against crop rules. Every threshold is visible in one table.</p></li>
+    <li><span>4</span><h3 data-i18n="s4h">You get one answer</h3><p data-i18n="s4p">Irrigate, monitor or wait, with a plain-language reason, a salt-risk hint and flush and crop guidance.</p></li>
+  </ol>
+  <div class="signals">
+    <div class="sig irr"><b data-i18n="g_irr">IRRIGATE</b><span data-i18n="g_irr_p">Water deficit is high. Water now.</span></div>
+    <div class="sig mon"><b data-i18n="g_mon">MONITOR</b><span data-i18n="g_mon_p">Close to the limit. Check the field again soon.</span></div>
+    <div class="sig wait"><b data-i18n="g_wait">WAIT</b><span data-i18n="g_wait_p">Soil is wet enough or rain is coming. Save water.</span></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="band alt">
+  <div class="wrap">
+    <h2 data-i18n="feat_h">What is inside</h2>
+    <div class="grid">
+      <article><h3 data-i18n="f1h">💧 Irrigation advice</h3><p data-i18n="f1p">A daily irrigate / monitor / wait signal with the reasons behind it. Logging an irrigation resets the water deficit.</p></article>
+      <article><h3 data-i18n="f2h">🧂 Salt-risk indicator</h3><p data-i18n="f2p">Scores conditions that favour salt build-up. If you enter a measured ECe, the measurement replaces the estimate.</p></article>
+      <article><h3 data-i18n="f3h">🚿 Flush timing</h3><p data-i18n="f3p">Qualified guidance on when flushing may make sense, based on conditions and your last flush.</p></article>
+      <article><h3 data-i18n="f4h">🌾 Salt-aware crops</h3><p data-i18n="f4p">FAO salt-tolerance cards, your priorities (scarce water, preferred crops) and a 3-step rotation idea with reasons.</p></article>
+      <article><h3 data-i18n="f5h">🗺️ Map dashboard</h3><p data-i18n="f5p">Pilot districts and your fields coloured by signal. OpenStreetMap, satellite, NASA true-colour and a MODIS vegetation layer.</p></article>
+      <article><h3 data-i18n="f6h">📅 6-month outlook</h3><p data-i18n="f6p">A season plan from about two years of past NASA data. It is climatology, not a forecast.</p></article>
+      <article><h3 data-i18n="f7h">🤖 AI explainer</h3><p data-i18n="f7p">A small Gemini model explains the rules' result in plain words in your language. It never overrides the rules and answers only from your field's facts.</p></article>
+      <article><h3 data-i18n="f8h">👥 Farmer community</h3><p data-i18n="f8p">Share tips by area, like posts, and report bad ones. Three reports hide a post. A verified-agronomist badge is supported.</p></article>
+      <article><h3 data-i18n="f9h">⚠️ Alerts</h3><p data-i18n="f9p">Frost and heavy-rain warnings plus the normal advice, delivered in Telegram.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section id="data" class="wrap sec">
+  <h2 data-i18n="data_h">Data and methods</h2>
+  <div class="cols">
+    <div>
+      <h3 data-i18n="d1h">NASA and open data</h3>
+      <ul class="list">
+        <li><b>NASA POWER</b> – T2M, T2M_MAX/MIN, PRECTOTCORR, RH2M, ALLSKY_SFC_SW_DWN, GWETROOT, GWETTOP</li>
+        <li><b>NASA GIBS / MODIS</b> – true-colour and NDVI map layers (visual support only)</li>
+        <li><b>Open-Meteo</b> – 7-day forecast</li>
+        <li><b>OpenStreetMap</b> – base map</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="d2h">Methods</h3>
+      <ul class="list">
+        <li>ET₀ by Hargreaves-Samani (FAO-56 family)</li>
+        <li>Crop salt tolerance: FAO Paper 29, Maas &amp; Hoffman (1977)</li>
+        <li data-i18n="d2c">Every rule lives in one versioned file, labelled “placeholder” until an agronomist reviews it</li>
+        <li data-i18n="d2d">“How was this decided?” shows the exact rule that fired</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="d3h">Built with</h3>
+      <ul class="list">
+        <li>Python, FastAPI, aiogram</li>
+        <li>Telegram Bot + Mini App (Leaflet)</li>
+        <li>Vercel + Supabase (Postgres)</li>
+        <li>Gemini (lightweight model) for explanations</li>
+        <li>pytest, with a full simulated bot conversation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HONESTY -->
+<section id="honesty" class="band">
+  <div class="wrap">
+    <h2 data-i18n="hon_h">Built to be honest about its limits</h2>
+    <div class="cols">
+      <div class="card">
+        <h3 data-i18n="h1h">What we do not claim</h3>
+        <ul class="list">
+          <li data-i18n="h1a">Salt is not measured from space. We score conditions that favour it.</li>
+          <li data-i18n="h1b">NASA POWER's grid is about 50 km, so neighbouring fields look alike.</li>
+          <li data-i18n="h1c">Thresholds are generic and not yet reviewed by an agronomist.</li>
+          <li data-i18n="h1d">No accuracy figure is claimed. This is decision support.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 data-i18n="h2h">What we checked</h3>
+        <p data-i18n="h2p">We replayed the rules day by day on real NASA data for the driest and wettest 30-day windows in three districts. In 6 of 6 district-seasons the driest window gave at least as many IRRIGATE days and no more WAIT days. Mean soil wetness is ordered IRRIGATE ≤ MONITOR ≤ WAIT.</p>
+        <p class="small" data-i18n="h2s">This is a logic sanity check, not field validation.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="h3h">Resilience and privacy</h3>
+        <ul class="list">
+          <li data-i18n="h3a">NASA data is cached and shown as “stale” if NASA is unreachable.</li>
+          <li data-i18n="h3b">Demo and stale data are always labelled.</li>
+          <li data-i18n="h3c">Requests are verified with Telegram's signed login data. You can delete your account and data.</li>
+          <li data-i18n="h3d">The AI gets no names or Telegram IDs.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="wrap sec">
+  <h2 data-i18n="rm_h">What comes next</h2>
+  <ul class="road">
+    <li data-i18n="r1">Agronomist review of Kc values, irrigation and salinity thresholds</li>
+    <li data-i18n="r2">Field soil-moisture and EC data from pilot farms to calibrate the rules</li>
+    <li data-i18n="r3">Finer data: SMAP soil moisture (~9 km) and per-field NDVI</li>
+    <li data-i18n="r4">Native-speaker review of the Uzbek and Russian texts</li>
+    <li data-i18n="r5">Alerts at each farmer's chosen hour (the free hosting plan currently sends one daily run, around 10:00 Tashkent time)</li>
+  </ul>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <img src="assets/logo-h-light.jpg" alt="Sho'r Radar" width="320">
+    <p data-i18n="final_p">No install. No sensors. Just Telegram.</p>
+    <a class="btn primary" href="https://t.me/ShorRadarBot" target="_blank" rel="noopener" data-i18n="cta_bot">Open the Telegram bot</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p data-i18n="foot1">Sho'r Radar · NASA Space Apps Challenge 2026 · Team CST</p>
+    <p class="small" data-i18n="foot2">Sources: NASA POWER; Open-Meteo; FAO Irrigation &amp; Drainage Paper 56 (Allen et al. 1998); Hargreaves &amp; Samani (1985); FAO Paper 29 and Maas &amp; Hoffman (1977); Leaflet; OpenStreetMap contributors; aiogram; FastAPI.</p>
+    <p class="small" data-i18n="foot3">AI disclosure: Claude (Anthropic) assisted with planning, code and draft translations; Gemini powers the in-app explainer. The team reviews all outputs.</p>
+    <p class="small"><a href="https://github.com/abdullohkariev/Shor-Radar" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
