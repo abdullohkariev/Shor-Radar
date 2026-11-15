@@ -1,6 +1,6 @@
 # Sho'r Radar – website
 
-Static landing page for Sho'r Radar (NASA Space Apps 2026, team CST). No build step, no dependencies.
+Static landing page for Sho'r Radar (NASA Space Apps 2026, team UzForce). No build step, no dependencies.
 Languages: English, Uzbek, Russian (switch in the header; Uzbek and Russian are first drafts and need native review).
 
 ## Preview locally

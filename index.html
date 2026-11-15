@@ -24,6 +24,7 @@
       <a href="#features" data-i18n="nav_features">Features</a>
       <a href="#data" data-i18n="nav_data">Data</a>
       <a href="#honesty" data-i18n="nav_honesty">Honesty</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
       <a href="#roadmap" data-i18n="nav_next">Next</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
@@ -38,7 +39,7 @@
 <section class="hero">
   <div class="wrap hero-in">
     <div>
-      <p class="eyebrow" data-i18n="eyebrow">NASA Space Apps 2026 · Team CST</p>
+      <p class="eyebrow" data-i18n="eyebrow">NASA Space Apps 2026 · Team UzForce</p>
       <h1 data-i18n="h1">Should I irrigate today?<br><span>Now a phone can answer.</span></h1>
       <p class="lead" data-i18n="lead">Sho'r Radar turns NASA Earth data into one clear daily signal for farmers in Uzbekistan: irrigate, monitor or wait. It also flags salt risk and suggests salt-aware crops. It lives inside Telegram, in Uzbek, Russian and English.</p>
       <div class="cta">
@@ -113,6 +114,28 @@
   </div>
 </section>
 
+<!-- COVERAGE -->
+<section id="coverage" class="wrap sec">
+  <h2 data-i18n="cov_h">Where it works</h2>
+  <p class="lead2" data-i18n="cov_p">14 farming areas across Uzbekistan are covered. Pilot areas are highlighted. You can also share your GPS location and we match the nearest covered area.</p>
+  <ul class="chips">
+    <li class="pilot" data-i18n="c_nukus">Nukus (Karakalpakstan)</li>
+    <li data-i18n="c_urgench">Urgench (Khorezm)</li>
+    <li data-i18n="c_khiva">Khiva (Khorezm)</li>
+    <li class="pilot" data-i18n="c_bukhara">Bukhara</li>
+    <li data-i18n="c_navoi">Navoi</li>
+    <li data-i18n="c_samarkand">Samarkand</li>
+    <li data-i18n="c_qarshi">Qarshi (Kashkadarya)</li>
+    <li data-i18n="c_termez">Termez (Surkhandarya)</li>
+    <li data-i18n="c_jizzakh">Jizzakh</li>
+    <li class="pilot" data-i18n="c_gulistan">Gulistan (Syrdarya)</li>
+    <li data-i18n="c_tashkent">Tashkent</li>
+    <li data-i18n="c_andijan">Andijan</li>
+    <li data-i18n="c_namangan">Namangan</li>
+    <li data-i18n="c_fergana">Fergana</li>
+  </ul>
+</section>
+
 <!-- DATA -->
 <section id="data" class="wrap sec">
   <h2 data-i18n="data_h">Data and methods</h2>
@@ -180,6 +203,20 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" class="band alt">
+  <div class="wrap narrow">
+    <h2 data-i18n="faq_h">Questions farmers ask</h2>
+    <details><summary data-i18n="q1">Do I need to install an app?</summary><p data-i18n="a1">No. Sho'r Radar opens inside Telegram, as a bot and a Mini App. You only need Telegram on your phone.</p></details>
+    <details><summary data-i18n="q2">Does it measure the salt in my soil?</summary><p data-i18n="a2">No. Salt cannot be seen directly from satellites. We score conditions that favour build-up. If you enter a measured ECe, that measurement decides the salt level instead.</p></details>
+    <details><summary data-i18n="q3">How accurate is it?</summary><p data-i18n="a3">We claim no accuracy figure. The rules are generic placeholders until an agronomist reviews them, and we only checked that the signals move in the right direction in dry and wet periods.</p></details>
+    <details><summary data-i18n="q4">Which languages does it speak?</summary><p data-i18n="a4">Uzbek, Russian and English, in both the bot and the Mini App. You can switch any time in Settings.</p></details>
+    <details><summary data-i18n="q5">What if NASA data is not available?</summary><p data-i18n="a5">The last NASA data is kept and shown, clearly marked as stale. The page also falls back to the last data saved on your phone.</p></details>
+    <details><summary data-i18n="q6">Does the AI decide what I should do?</summary><p data-i18n="a6">No. The rules decide. The AI only explains the result in plain words, using the facts about your field, and says so when something is missing.</p></details>
+    <details><summary data-i18n="q7">Is my data safe?</summary><p data-i18n="a7">Requests are verified with Telegram's signed login data, and you can only see your own data. You can delete your account and all data in Settings.</p></details>
+  </div>
+</section>
+
 <!-- ROADMAP -->
 <section id="roadmap" class="wrap sec">
   <h2 data-i18n="rm_h">What comes next</h2>
@@ -190,6 +227,14 @@
     <li data-i18n="r4">Native-speaker review of the Uzbek and Russian texts</li>
     <li data-i18n="r5">Alerts at each farmer's chosen hour (the free hosting plan currently sends one daily run, around 10:00 Tashkent time)</li>
   </ul>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="wrap sec">
+  <div class="team">
+    <h2 data-i18n="team_h">Made by UzForce</h2>
+    <p data-i18n="team_p">UzForce is the team behind Sho'r Radar, built for the NASA Space Apps Challenge 2026. Our goal is simple: make satellite data useful on a farmer's phone, in the farmer's own language.</p>
+  </div>
 </section>
 
 <!-- FINAL CTA -->
@@ -205,7 +250,7 @@
 
 <footer>
   <div class="wrap foot">
-    <p data-i18n="foot1">Sho'r Radar · NASA Space Apps Challenge 2026 · Team CST</p>
+    <p data-i18n="foot1">Sho'r Radar · NASA Space Apps Challenge 2026 · Team UzForce</p>
     <p class="small" data-i18n="foot2">Sources: NASA POWER; Open-Meteo; FAO Irrigation &amp; Drainage Paper 56 (Allen et al. 1998); Hargreaves &amp; Samani (1985); FAO Paper 29 and Maas &amp; Hoffman (1977); Leaflet; OpenStreetMap contributors; aiogram; FastAPI.</p>
     <p class="small" data-i18n="foot3">AI disclosure: Claude (Anthropic) assisted with planning, code and draft translations; Gemini powers the in-app explainer. The team reviews all outputs.</p>
     <p class="small"><a href="https://github.com/abdullohkariev/Shor-Radar" target="_blank" rel="noopener">GitHub</a></p>

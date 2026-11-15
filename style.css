@@ -108,3 +108,16 @@ footer{padding:36px 0;border-top:1px solid var(--line);background:var(--panel)}
 .foot p{margin:0 0 8px}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* coverage, faq, team */
+.lead2{color:var(--ink2);max-width:70ch;margin:-12px 0 22px}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{background:var(--panel);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:15px}
+.chips li.pilot{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
+.narrow{width:min(780px,100% - 32px)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--ink2)}
+.team{background:var(--ink);color:#fff;border-radius:20px;padding:44px 32px;text-align:center}
+.team h2{margin-bottom:14px}
+.team p{max-width:60ch;margin:0 auto;color:#cfe3d8;font-size:18px}
